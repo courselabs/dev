@@ -51,5 +51,35 @@ git push origin main
 But you have your own fork, so you can push to that:
 
 ```
+git push fork main
+```
 
+Now your changes are stored in GitHub so they could be available [forever](https://archiveprogram.github.com/arctic-vault/) :)
+
+Open your fork again in the browser and refresh the page. You'll see a banner saying _This branch is 1 commit ahead of courselabs:main_.
+
+Your fork is a separate repo, but GitHub knows it is linked to the original repo, and there are options to send your changes back to the source - with an approval step so the owner can decide if they want to take them.
+
+## Branching and merging
+
+In a team project you'll all be sharing code in the same repo, but you need to make sure your changes are isolated. Often developers create a _branch_ for every item they work on. A branch is lightweight copy of the code, which can be shared without affecting the main codebase.
+
+Create a new branch:
+
+```
+git checkout -b my-new-feature
+```
+
+List your branches:
+
+```
+git branch
+```
+
+> `main` is the original branch and that could be the source used to build and deploy the app
+
+Make some changes to the repo - add or delete files, edit text, remove whole folders - and then commit them:
+
+```
+# if you haven't made any changes,. 
 ```
