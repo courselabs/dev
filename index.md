@@ -34,9 +34,9 @@
 
 ## Ensuring Quality
 
-- [unit testing]
+- [automated testing]
 
-- [end-to-end testing]
+- [tracking defects]
 
 
 ## Securing Applications
