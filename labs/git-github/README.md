@@ -1,5 +1,5 @@
 
-Open the terminal in VS Code:
+Open the terminal in VS Code (menu _Terminal...New Terminal_)
 
 ```
 cd ~
@@ -7,26 +7,22 @@ cd ~
 ls
 ```
 
-> This is your home directory; we'll create a new folder for this lab:
+> This is your home directory; the listing will show Documents etc.
+
+
+Create a new folder for this lab:
 
 ```
-mkdir new-project
+mkdir -p Documents/new-project
 
-cd new-project
-
-notepad ./readme.txt
+cd Documents/new-project
 ```
-
-This will open Notepad with a message about creating a new file - click _OK_
 
 Write some text in the file:
 
 ```
-version 1
-text
+echo 'first line' > readme.txt
 ```
-
-And save it.
 
 In the terminal you can read the file with a command:
 
@@ -37,7 +33,7 @@ cat readme.txt
 And add some more text with another command:
 
 ```
-echo ' extra' >> readme.txt
+echo 'second line' >> readme.txt
 ```
 
 Open the file again - the new text is there, but you can't see when it got added or by whom.
@@ -59,7 +55,7 @@ Now Git is tracking all changes for you. Try adding some more text:
 
 
 ```
-echo ' even more' >> readme.txt
+echo 'third line' >> readme.txt
 ```
 
 ```
@@ -70,6 +66,16 @@ Open the new-project folder in VS Code:
 
 - File...New Window
 - _Open Folder_
-- 
+- Browse to Documents then select new-project
+
+Find the text file. Then switch to _View...Source Control_. Open the file again - what do you see?
+
+
+## Lab
+
+- add a new file & commit changes
+- delete the original file & commit changes
+- list all the commits with `git log`
+- can you roll back to the very first commit?
 
 

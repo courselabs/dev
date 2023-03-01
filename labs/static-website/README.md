@@ -18,7 +18,7 @@ Copy and paste this into it:
 
 Save the file in your Documents folder and call it "index.html"
 
-- if you're using Notepad, in the _Save As_ window click the dropdown _Save as type_ and choose _All Files (*.*)_
+- if you're using Notepad, click _File_ then  _Save As_. In the window click the dropdown _Save as type_ and choose _All Files (*.*)_
 
 - if you're using TextEdit it will ask you to confirm you want to use the extension _.html_ - you do :)
 
