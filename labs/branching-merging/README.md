@@ -60,7 +60,7 @@ Open your fork again in the browser and refresh the page. You'll see a banner sa
 
 Your fork is a separate repo, but GitHub knows it is linked to the original repo, and there are options to send your changes back to the source - with an approval step so the owner can decide if they want to take them.
 
-## Branching and merging
+## Branching
 
 In a team project you'll all be sharing code in the same repo, but you need to make sure your changes are isolated. Often developers create a _branch_ for every item they work on. A branch is lightweight copy of the code, which can be shared without affecting the main codebase.
 
@@ -81,5 +81,29 @@ git branch
 Make some changes to the repo - add or delete files, edit text, remove whole folders - and then commit them:
 
 ```
-# if you haven't made any changes,. 
+git add --all
+
+git commit -m 'Some changes in my branch'
 ```
+
+Check the history of your repo:
+
+```
+git log -n 3
+```
+
+GitHub knows about branches. You can share a new branch by pushing it with a special syntax:
+
+```
+git push -u fork my-new-feature
+```
+
+> You'll see in the output that git links your local branch to the remote branch in the fork.
+
+Open your browser and refresh the fork in GitHub. You'll see a new sign saying there's a new branch.
+
+Click the _Compare and pull request_ button and you can see the changes you made (you don't need to complete the Pull Request).
+
+## Merging
+
+This branch is separate from the `main` branch, but Git knows they're related
