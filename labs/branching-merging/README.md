@@ -120,6 +120,18 @@ Now merge in your branch changes:
 
 ```
 git merge my-new-feature
+```
 
+You'll see some commit IDs and the list of files you changed. Check the log again and you'll see your branch changes are in the main branch now:
+
+```
 git log -n 1
 ```
+
+
+## Lab
+
+- push the changes from main to your fork
+- create a pull request from your fork to the original repo
+- open the PR list in the original repo: https://github.com/courselabs/dev/pulls
+- can you see why PRs are useful?
