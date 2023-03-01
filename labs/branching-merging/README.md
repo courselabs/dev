@@ -106,4 +106,20 @@ Click the _Compare and pull request_ button and you can see the changes you made
 
 ## Merging
 
-This branch is separate from the `main` branch, but Git knows they're related
+This branch is separate from the `main` branch, but Git knows they're related. You can merge branches to bring the changes you've been working on back into the main codebase:
+
+First switch back to main and check the last commit:
+
+```
+git checkout main
+
+git log -n 1
+```
+
+Now merge in your branch changes:
+
+```
+git merge my-new-feature
+
+git log -n 1
+```
