@@ -14,6 +14,12 @@
 
 - [branching & merging]
 
+## Planning Development
+
+- [stories & backlogs]
+
+- [sprints & releases]
+
 ## Building Code
 
 - [CI/CD pipelines]
@@ -26,11 +32,7 @@
 
 - [deploying to the cloud]
 
-## Planning Development
 
-- [backlogs & PBIs]
-
-- [sprints & releases]
 
 ## Ensuring Quality
 
