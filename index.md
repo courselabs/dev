@@ -12,7 +12,7 @@
 
 - [git & github]
 
-- [branches & commits]
+- [branching & merging]
 
 ## Building Code
 

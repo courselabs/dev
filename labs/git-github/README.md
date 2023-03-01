@@ -10,6 +10,40 @@ ls
 > This is your home directory; the listing will show Documents etc.
 
 
+## Clone a GitHub repo
+
+Check the repo on GitHub: https://github.com/courselabs/dev.git
+
+Browse around:
+
+- click on _Commits_
+- open a commit - you can see the changes that were made
+- every commit has a unique id (like [0395e03490acc0a180191dc9ce83bcde5f4ba755](https://github.com/courselabs/dev/commit/0395e03490acc0a180191dc9ce83bcde5f4ba755)) - but you can refer to them by a short version (0395e03)
+
+There are also _Issues_
+
+- this is a public repo so anyone can add an issue
+- add one if you like :)
+
+You can download a copy of the repo by **cloning** it. That downloads the current contents and all the history onto your machine.
+
+Run this in the terminal window:
+
+```
+git clone https://github.com/courselabs/dev.git
+```
+
+Open the folder in VS Code (_File..Open Folder_ then browse to Documents and the folder dev). You can see all the contents in the folder view. 
+
+Open a file and it will load - click on the _TImeline_ view in the bottom-left window:
+
+- you can see the history of the file
+- including commits made in the git repo
+- click on one entry and you can see what changed 
+
+## Create a new Git repo
+
+
 Create a new folder for this lab:
 
 ```
@@ -71,7 +105,10 @@ Open the new-project folder in VS Code:
 Find the text file. Then switch to _View...Source Control_. Open the file again - what do you see?
 
 
+
 ## Lab
+
+Back in your own new-project window:
 
 - add a new file & commit changes
 - delete the original file & commit changes
