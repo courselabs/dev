@@ -1,4 +1,7 @@
 
+## Reference
+
+- [Epics](https://www.atlassian.com/agile/project-management/epics)
 
 ->"Your work"
 /-> "Boards"

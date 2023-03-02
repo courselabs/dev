@@ -9,11 +9,10 @@
 - [website with API & database]
 
 - [git & github]
-G
 
 ## Planning Development
 
-- [stories & backlogs]
+- [epics & stories]
 
 - [sprints & releases]
 
@@ -21,11 +20,11 @@ G
 
 ## Building and Deploying Apps
 
-- [CI/CD pipelines]
+- [continuous integration]
 
-- [pull requests & merges]
+- [pull requests]
 
-- [deploying to the cloud]
+- [continuous deployment]
 
 
 ## Ensuring Quality
