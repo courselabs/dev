@@ -2,17 +2,14 @@
 
 ## Pre-reqs
 
-## Getting Started
+## Writing and Sharing Code
 
 - [static website]
 
 - [website with API & database]
 
-## Sharing Code
-
 - [git & github]
-
-- [branching & merging]
+G
 
 ## Planning Development
 
@@ -20,31 +17,24 @@
 
 - [sprints & releases]
 
-## Building Code
+- [branching & merging]
+
+## Building and Deploying Apps
 
 - [CI/CD pipelines]
 
 - [pull requests & merges]
 
-## Deploying Applications
-
-- [application environments]
-
 - [deploying to the cloud]
-
 
 
 ## Ensuring Quality
 
 - [automated testing]
 
+- [application environments]
+
 - [tracking defects]
 
-
-## Securing Applications
-
-- 
-
-- 
 
 ## Workshop
