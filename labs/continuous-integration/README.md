@@ -78,5 +78,25 @@ git commit -m 'Updated app message'
 git push fork main
 ```
 
-Open the Actions page again in GitHub and you should see the build running.
+Open the Actions page again in GitHub, refresh and you should see the build running:
+
+![](TODO)
+
+Click the _build_ box and you can see the output of each stage of the build process.
+
+It should complete successfully and show a green tick. This is good. The CI build should always be green.
+
+## Lab
+
+There's another feature in this app, try running this:
+
+```
+dotnet run 23
+```
+
+Can you see from the code what is happening when you add the `23` to the run command?
+
+Change line 13, replacing args[0] with args[1] - don't worry about the details of what that is :)
+
+Run `dotnet run 23` again and you'll see an error; our change has broken the app. If you push the change to your GitHub fork the action will run again - does the build fail this time?
 
