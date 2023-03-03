@@ -1,7 +1,9 @@
 
 ## Reference
 
-- [Epics](https://www.atlassian.com/agile/project-management/epics)
+- [Epics and the Product Backlog](https://www.scrum.org/resources/blog/what-are-epics-and-features)
+
+- [Epics in Jira](https://www.atlassian.com/agile/project-management/epics)
 
 ->"Your work"
 /-> "Boards"
