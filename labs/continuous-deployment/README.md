@@ -71,8 +71,10 @@ az webapp config appsettings set --settings PROJECT='/labs/continuous-deployment
 ```
 
 ```
-az webapp deployment source config -g labs-appservice-cicd --manual-integration --branch main -n <app-name> --repo-url <github-fork-url>.git
+az webapp deployment source config -g labs-appservice-cicd --manual-integration --branch main -n <app-name> --repo-url <github-fork-url>
 ```
+
+> You can always find your cloud service again from this link: [Azure App Services](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites)
 
 
 
