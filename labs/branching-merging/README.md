@@ -4,7 +4,7 @@
 
 - [git-flow](https://nvie.com/posts/a-successful-git-branching-model/) - a branching model for complex  projects
 
-- [GitHub Flow](https://guides.github.com/introduction/flow/https://guides.github.com/introduction/flow/) - a simpler branching model
+- [GitHub Flow](https://guides.github.com/introduction/flow/) - a simpler branching model
 
 ## Forking a repository
 
