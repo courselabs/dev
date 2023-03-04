@@ -36,4 +36,21 @@ When you've added your review, open the _Pull requests_ link at the top of the G
 
 These are your own PRs which you've created. From here you can see your partner's feedback on your proposed changes.
 
-You can add comments, make more changes or close the PR - which means your 
+You can add comments, make more changes or close the PR - which means your changes won't get merged.
+
+
+## Merge the PR
+
+If you're happy after the review you can merge the PR:
+
+![](merge)
+
+This brings your partner's changes into your fork - it's a special form of merge and commit.
+
+Check the Actions tab after you merge, what's happening with the build?
+
+## Lab
+
+GitHub doesn't give you a nice visualization of the branch and merge history, although if you browse around the Insights tab, you can see something similar.
+
+Can you work through the history in your fork to see which commits came from the original courselabs repo, which are yours and which are from the PR you merged?
