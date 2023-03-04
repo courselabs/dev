@@ -4,6 +4,15 @@
     ViewData["Title"] = "Home page";
 }
 
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+</style>
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <h2>This is a demo app from the <a href="https://courselabs.co/dev">Software Development</a> class.</h2>
@@ -13,3 +22,11 @@
     <hr/>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+@if(Model.EnvironmentName != "PROD")
+{
+<footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+}
