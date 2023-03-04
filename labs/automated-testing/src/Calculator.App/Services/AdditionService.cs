@@ -6,6 +6,10 @@ namespace Calculator.App.Services;
     {
         public int Operate(int left, int right)
         {
+            if (right == 17)
+            {
+                right = right * 2;
+            }
             return left + right;
         }
     }
