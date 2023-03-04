@@ -6,7 +6,7 @@ namespace HelloWorldWeb.Pages;
 public class IndexModel : PageModel
 {
     public string EnvironmentName {get; set;}
-    public string BannerColor {get; set;}
+    public string FooterColor {get; set;}
 
     private readonly IConfiguration _config;
     private readonly ILogger<IndexModel> _logger;
@@ -27,7 +27,7 @@ public class IndexModel : PageModel
         else
         {
             EnvironmentName = envName.ToUpper();
-            BannerColor = envName == "STAGING" ? "BlueViolet" : "Coral";
+            FooterColor = EnvironmentName == "STAGING" ? "BlueViolet" : "Coral";
         }
     }
 }

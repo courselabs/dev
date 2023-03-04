@@ -8,7 +8,7 @@
 footer {
   text-align: center;
   padding: 3px;
-  background-color: DarkSalmon;
+  background-color: @Model.FooterColor;
   color: white;
 }
 </style>
@@ -25,8 +25,7 @@ footer {
 
 @if(Model.EnvironmentName != "PROD")
 {
-<footer>
-  <p>Author: Hege Refsnes<br>
-  <a href="mailto:hege@example.com">hege@example.com</a></p>
-</footer>
+  <footer>
+    <p>Environment: @Model.EnvironmentName<br>
+  </footer>
 }
