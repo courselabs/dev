@@ -19,8 +19,8 @@ jobs:
       - name: Restore & build
         run: |
           dotnet restore
-          dotnet build 
-          Ì
+          dotnet build
+
       - name: Run
         run: |
           dotnet run
