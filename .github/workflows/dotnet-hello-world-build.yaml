@@ -1,5 +1,11 @@
 name: .NET Hello World build
+
 on: [push]
+
+env:
+  AZURE_WEBAPP_NAME: my-app-name    # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.' 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -8,13 +14,21 @@ jobs:
         working-directory: labs/continuous-integration/src/HelloWorld
     steps:
       - uses: actions/checkout@v3
+
       - name: Setup .NET ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: "6.0.x"
-      - name: Install dependencies
-        run: dotnet restore
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
-      - name: Run
-        run: dotnet run
+
+      - name: Build & publish
+        run: |
+          dotnet restore
+          dotnet build --configuration Release
+          dotnet publish -c Release --property:PublishDir='./out' 
+      
+      - name: Deploy to the cloud
+        uses: azure/webapps-deploy@v2
+        with: 
+          app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE  }} # Define secret variable in repository settings as per action documentation
+          package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
