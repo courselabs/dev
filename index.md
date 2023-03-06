@@ -1,6 +1,16 @@
+Welcome to the Development labs.
 
+These are hands-on resources to help you learn the basics of Software Development.
 
 ## Pre-reqs
+
+ - [Install the tools you need](./setup/README.md) 
+ - Download the materials
+    - Open a terminal (PowerShell on Windows; any shell on Linux/macOS) 
+    - Run: `git clone https://github.com/courselabs/dev`
+     - Open the folder: `cd dev`
+- _Optional_
+    - Install [Visual Studio Code](https://code.visualstudio.com) (free - Windows, macOS and Linux) to browse the materials
 
 ## Writing and Sharing Code
 
