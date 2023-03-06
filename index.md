@@ -16,9 +16,9 @@ These are hands-on resources to help you learn the basics of Software Developmen
 
 - [A static HTML website](/labs/static-website/README.md)
 
-- [website with API & database]
+- [A web application with API & database](/labs/web-app/README.md)
 
-- [git & github]
+- [Sharing code with Git & GitHub](/labs/git-github/README.md)
 
 ## Planning Development
 
