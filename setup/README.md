@@ -81,4 +81,10 @@ ls
 
 You should see a list of files and folders including names like _labs_ and _setup_.
 
+Now you can launch VS Code from this folder, and it will load all the class materials:
+
+```
+code .
+```
+
 > Now you're good to go 🚀
