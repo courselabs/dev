@@ -14,7 +14,7 @@ These are hands-on resources to help you learn the basics of Software Developmen
 
 ## Writing and Sharing Code
 
-- [static website]
+- [A static HTML website](/labs/static-website/README.md)
 
 - [website with API & database]
 
