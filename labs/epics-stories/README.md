@@ -74,7 +74,7 @@ Save the epic and you'll see there's still nothing showing in the _Backlog_. Onl
 
 Open your Epic and click _Add a child issue_. Now create a story under the epic:
 
- - for registeed users to login
+ - for registered users to login
  - you can enter just the summary from this screen
  - open the issue to add more detail
  - use the standard _As a... I want to... So that..._ format in the description
