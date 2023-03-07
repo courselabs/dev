@@ -71,20 +71,12 @@ git clone https://github.com/courselabs/dev
 
 This will _clone_ the content, downloading a copy you can use into your _Documents_ folder, in a subfolder called _dev_.
 
-When the command completes, check you have everything:
+When the command completes, you'll have all the content stored on your machine.
+
+Now you can launch VS Code from the _dev_ folder, and it will load all the class materials:
 
 ```
-cd dev
-
-ls
-```
-
-You should see a list of files and folders including names like _labs_ and _setup_.
-
-Now you can launch VS Code from this folder, and it will load all the class materials:
-
-```
-code .
+code ./dev
 ```
 
 > Now you're good to go 🚀

@@ -22,7 +22,7 @@ These are hands-on resources to help you learn the basics of Software Developmen
 
 ## Planning Development
 
-- [epics & stories]
+- [User Stories and Epics](/labs/epics-stories/README.md)
 
 - [sprints & releases]
 
