@@ -24,7 +24,7 @@ These are hands-on resources to help you learn the basics of Software Developmen
 
 - [User Stories and Epics](/labs/epics-stories/README.md)
 
-- [sprints & releases]
+- [Sprints and releases](/labs/sprints-releases/README.md)
 
 - [branching & merging]
 
