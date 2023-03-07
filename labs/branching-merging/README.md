@@ -1,6 +1,6 @@
 # Branching and Merging
 
-Branching is how developers can work on different features in the same codebase without interfering with each other. Applications usually have a main branch which is used for releases, and developers create feature branches for work-in-progress. Branches can be stored on remote servers (like GitHub), but the work won't be released until the branch is _merged_ into the main branch.
+Branching is how developers can work on different features in the same codebase without interfering with each other. Applications usually have a _main_ branch which is used for releases, and developers create _feature branches_ for work-in-progress. Branches can be stored on remote servers (like GitHub), but the work won't be released until the branch is _merged_ into the main branch.
 
 In this lab you'll create your own copy of the project repo in GitHub, which you can use to try branching and merging
 
@@ -14,7 +14,7 @@ In this lab you'll create your own copy of the project repo in GitHub, which you
 
 ## Forking a repository
 
-You can make changes to a local repo but you can only push those changes to GitHub if you have permission. You don't have permission to push to the `courselabs/dev` repo, but you can create a copy if it in GitHub.
+You can make changes to a local repo but you can only push those changes to GitHub if you have permission. You don't have permission to push to the `courselabs/dev` repo, but you can create your own copy of that repository in GitHub.
 
 You'll need a GitHub account - if you don't have one, sign up at:
 
@@ -24,7 +24,9 @@ When you have registered and then signed in with your account, you can fork the 
 
 - https://github.com/courselabs/dev/fork
 
-Leave all the default values and click _Create Fork_.
+Leave all the default values and click _Create Fork_:
+
+![](/img/branching-merging/create-fork.png)
 
 > Make a note of the URL of your fork in the browser window, it will contain your GitHub username. 
 
@@ -36,7 +38,7 @@ Open the project repo in VS Code and then launch a terminal. Git understands the
 cd ~/Documents/dev
 
 # make sure you use your real URL from the GitHub window!
-git remote add fork <your-github-fork url>
+git remote add fork <your-github-fork-url>
 ```
 
 ## Pushing changes
@@ -46,7 +48,7 @@ Make a change to a file or create a new file - anything will do - and commit the
 ```
 git add --all
 
-git commit -m 'Added new file'
+git commit -m 'Made some changes'
 ```
 
 The changes are saved in your local copy of the repo on your machine. That isn't automatically synced to GitHub, so if your machine died your changes would be lost.
@@ -151,3 +153,12 @@ Let's send your changes up to GitHub and ask to have them brought into the cours
 - open the PR list in the original repo: https://github.com/courselabs/dev/pulls
 - can you see why PRs are useful?
 
+I won't be merging your changes (unless you've fixed some typos), and your local content might be a bit mixed up by now. You can reset it back to the original content with these commands:
+
+```
+git checkout main
+
+git pull origin main
+
+git reset --hard
+```
