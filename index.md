@@ -30,7 +30,7 @@ These are hands-on resources to help you learn the basics of Software Developmen
 
 ## Building and Deploying Apps
 
-- [continuous integration]
+- [Continuous Integration](/labs/continuous-integration/README.md)
 
 - [pull requests]
 

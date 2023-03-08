@@ -1,3 +1,10 @@
+# Pull Requests
+
+Pushing changes to the main branch kicks off a build pipeline which could be set up to deploy to production. The pipeline can have lots of safeguards but teams usually like to have a manual review process. GitHub and other Git systems let you protect the main branch, so the only way to merge changes from a feature branch is using a Pull Request (PR).
+
+In this lab you'll create your own PR and review someone else's PR so you can experience the workflow.
+
+## Reference
 
 
 ## Pair up and create a PR!
