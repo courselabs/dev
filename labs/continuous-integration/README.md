@@ -85,14 +85,15 @@ This pipeline is triggered when you push changes. We'll make a small change and 
 ```
 # make sure you have the latest version of the code
 git checkout main
+
 git pull
 ```
 
-Now open the file [labs/continuous-integration/src/HelloWorld/Program.cs](labs/continuous-integration/src/HelloWorld/Program.cs) and make a small change so it prints something else instead of "Hello  World!".
+Now open the file [labs/continuous-integration/src/HelloWorld/Program.cs](/labs/continuous-integration/src/HelloWorld/Program.cs) and make a small change so it prints something else instead of "Hello  World!" (you can safely change anything inside the quote marks on line 9).
 
 You can run `dotnet run` to test your changes.
 
-Now commit and push your update:
+Now commit and push your update to your own fork on GitHub:
 
 ```
 git add --all
