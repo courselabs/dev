@@ -98,4 +98,4 @@ Open the _Roadmap_ tab and you'll see where your version is planned, and how it 
 
 Jira lets you customize pretty much everything. Can you find your project settings and edit the board to add a new status - _In testing_ - so the team can see when a story has been built and is with the testers.
 
-This is not as simple as you might think, but the built-in help in Jira is good so you should be able to work through it.
+This is not as simple as you might think, but the built-in help in Jira is good so you should hopefully be able to work through it.

@@ -64,6 +64,13 @@ git status
 
 You'll see your text file is listed as _untracked_. This means it hasn't been saved in Git. Changes aren't automatically saved, you need to explicitly tell Git when you want to do that.
 
+Git is all about recording the history of changes, so it needs to know who you are. If this is the first time you've used Git on your machine, you need to set a user name and email address - you can just use fake entries for now:
+
+```
+git config --global user.name "username"
+git config --global user.email email@domain.com
+```
+
 To save changes first you _add_ all the changed files:
 
 ```
