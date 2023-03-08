@@ -38,7 +38,7 @@ Open the project repo in VS Code and then launch a terminal. Git understands the
 cd ~/Documents/dev
 
 # make sure you use your real URL from the GitHub window!
-git remote add fork <your-github-fork-url>
+git remote add fork your-github-fork-url
 ```
 
 ## Pushing changes
@@ -56,11 +56,11 @@ The changes are saved in your local copy of the repo on your machine. That isn't
 Try pushing to the _origin_ - which is the original copy of the code in the `courselabs/dev` repo:
 
 ```
-# this will fail
+# this will pop up a window asking you to authenticate:
 git push origin main
 ```
 
-> You'll get an error, because your account doesn't have access to write to the courselabs repo.
+> Even after you autheticatie, you'll get an error saying `Permission to courselabs/dev.git denied`. That's because your account doesn't have access to write to the courselabs repo.
 
 But you have your own fork which you do have permissions for, so you can push to that:
 

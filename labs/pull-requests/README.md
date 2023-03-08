@@ -1,30 +1,34 @@
 # Pull Requests
 
-Pushing changes to the main branch kicks off a build pipeline which could be set up to deploy to production. The pipeline can have lots of safeguards but teams usually like to have a manual review process. GitHub and other Git systems let you protect the main branch, so the only way to merge changes from a feature branch is using a Pull Request (PR).
+Pushing changes to the main branch kicks off a build pipeline which could be configured to deploy to production. The pipeline can have lots of safeguards but teams usually like to have a manual review process. GitHub and other Git systems let you protect the main branch, so the only way to merge changes from a feature branch is using a Pull Request (PR).
 
 In this lab you'll create your own PR and review someone else's PR so you can experience the workflow.
 
 ## Reference
 
+- 
 
 ## Pair up and create a PR!
 
-For this lab you'll need someone to pair up with, so you can see how the pull request workflow goes.
+For this lab you'll need someone to pair up with, so you can see how the pull request workflow goes:
 
-Browse to your partner's fork - edit a file(any file will do):
+- find your partner
+- share the URL for your GitHub forks
 
-![](edit).
+Open your partner's fork in GitHub. You can make simple changes direct from the GitHub website. Navigate through the file list in the _Code_ view and open a file (any file will do) - then click the pencil icon to edit it:
 
-Scroll to the bottom and click Propose Changes:
+![](/img/pull-requests/edit-file.png)
 
-![](propose)
+Make any change you like, then scroll to the bottom and click _Propose Changes_:
+
+![](/img/pull-requests/propose-changes.png)
 
 
-GitHub checks your changes can be merged without a conflict - now you can select _Create pull request_:
+GitHub checks your changes can be merged without a conflict. Now you can select _Create pull request_:
 
-![](create-pr)
+![](/img/pull-requests/create-pr.png)
 
-When you're both done, browse back to your own fork.
+When you're done, browse back to your own fork. You should have a PR to review from your partner :)
 
 
 ## Review the PR
