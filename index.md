@@ -26,11 +26,11 @@ These are hands-on resources to help you learn the basics of Software Developmen
 
 - [Sprints and releases](/labs/sprints-releases/README.md)
 
-- [branching & merging]
+- [Branching and merging](/labs/branching-merging/README.md)
 
 ## Building and Deploying Apps
 
-- [continuous integration]
+- [Continuous Integration](/labs/continuous-integration/README.md)
 
 - [pull requests]
 
@@ -44,6 +44,3 @@ These are hands-on resources to help you learn the basics of Software Developmen
 - [application environments]
 
 - [tracking defects]
-
-
-## Workshop
