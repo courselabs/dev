@@ -18,7 +18,7 @@ az appservice plan create -g $rgName -n $planName `
   --only-show-errors | Out-Null
 
 $appName="labscd-$appId"
-echo '* Creating Web App $appName'
+echo "* Creating Web App $appName"
 az webapp create -g $rgName --plan $planName `
   --runtime dotnetcore:6.0 -n $appName `
   --only-show-errors | Out-Null
@@ -39,4 +39,6 @@ az webapp deployment source config `
 
 echo '----'
 echo '** DONE! **'
+echo "** You can browse to your website at: http://$($appName).azurewebsites.net"
+echo '** (it might not be ready yet)'
 echo '---'

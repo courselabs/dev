@@ -88,59 +88,53 @@ You can use the terminal in Azure to create a cloud service which will run the w
 
 ## Create the Azure resources
 
-Copy and paste this into the cloud shell window:
+The cloud shell has Git installed so we can clone the class repo:
 
 ```
-az group create -n labs-cd -l eastus
-
-az appservice plan create -g labs-cd -n app-plan-01 --is-linux --sku S1 --number-of-workers 2
+git clone https://github.com/courselabs/dev
 ```
 
-This creates a service to host a web application; it will take a while.
+There are several commands we need to run. Instead of copying and pasting them one at a time, I've created a _script_ file which contains all the commands. It uses the Azure command line tool (called `az`) - if you're interested, you can find it here:
 
-Now create the web application - you'll be asked to give it a name, which will become the URL so it needs to be unique - something like `labs-cd-` plus your initials.
+- [setup.ps1](/labs/continuous-deployment/setup.ps1) - the PowerShell script to set up the web app service
 
-```
-# make sure you use an app name of your own
-az webapp create -g labs-cd --plan app-plan-01 --runtime dotnetcore:6.0 -n your-own-unique-app-name
-```
+Now run the script to create the cloud service.
 
-> If you choose a name which has been taken by someone else in the world, you'll see an error message. Just try the command again with a different name.
-
-When the app service is created you can link your GitHub repo to the web application. There are a couple more commands to do that. 
-
-First this will tell the app service where to find the project source code (like when we run `cd` commands locally):
+**The script will ask you for your GitHub username - just enter the username you used when you created your GitHub account, e.g. I would type `sixeyed`**
 
 ```
-az webapp config appsettings set --settings PROJECT='labs/continuous-deployment/src/HelloWorldWeb/HelloWorldWeb.csproj' -g labs-cd -n your-own-unique-app-name
+./dev/labs/continuous-deployment/setup.ps1
 ```
 
-And now this will link the app to the GitHub repo for the class. Make sure you use your own app name, and the URL to your own GitHub fork - so you can push changes later and see the deployment working:
-
-```
-az webapp deployment source config -g labs-appservice-cicd --manual-integration --branch main -n <app-name> --repo-url <github-fork-url>.git
-```
-
-_az webapp deployment source config -g labs-cd --manual-integration --branch main -n labs-cd-es --repo-url https://github.com/sixeyed/dev.git_
+> This script does quite a few things and it will take a while. If you see warning messages about something called Blowfish, you can ignore them :)
 
 
-The build will take a while. This is a different approch where the cloud service takes the source code and it knows how to build and deploy it. You don't need to manage a workflow in this case.
+The last step of the script does the deployment. This is a different approach to GitHub actions, where you have to write your own workflow file. Here the cloud service takes the source code, it knows that it's a .NET app and it knows how to build and deploy it. You don't need to manage the pipeline.
 
-> You can always find your cloud service again from this link: [Azure App Services](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites)
+While the build is happening you can browse to your app service here: [Azure App Services](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/Microsoft.Web%2Fsites).
 
-Open your App Service in the Overview section there's a default domain which shows your web app name: 
+Cick your App Service name to open the details page. In the left navigation click the _Deployment Center_ link:
 
-![](app-service)
+- this shows you that your service is linked to your GitHub repo
+- click _Logs_ and you'll see the history of the deployments
+- the status field may say _Pending_ or _Running_
+- when the deployment completes the status will be _Success (Active)_:
 
-That's a link - when you click it, you'll open your web application, running in the cloud :)
+![](/img/continuous-deployment/deployment-success.png)
+
+Click back to the _Overview_ section on the left, and in the right hand side you'll see _Default domain_ with a link that looks something like `labscd-488eece9.azurewebsites.net` (yours will be similar but not the same).
+
+Click that link and you'll see your web app running in the cloud. This is the same app you ran on your laptop, but now it has a public URL anyone can access, and it can handle thousands of users:
+
+![](/img/continuous-deployment/web-azure.png)
 
 ## Lab
 
-How was that? Lots of new things here - the cloud services, the command line tool to work with the cloud services, and the whole continuous deployment. It's not really continuous though... Make a change to the web page at:
+How was that? Lots of new things here - the cloud services, the command line script to create the service, and the whole continuous deployment. It's not really continuous though, the script sets it up for manual deployment. Try making a change to the web page source code:
 
 - [labs/continuous-deployment/src/HelloWorldWeb/Pages/Index.cshtml](labs/continuous-deployment/src/HelloWorldWeb/Pages/Index.cshtml)
 
-Any change will do. Then push your changes to your fork:
+Any change will do, but something in the HTML that you will notice in the browser. Then push your changes to your fork:
 
 ```
 git add --all
@@ -150,4 +144,4 @@ git commit -m 'Updated CD lab web app'
 git push fork main
 ```
 
-You'll need to manually start a new deployment from the Azure Portal. Can you trigger that and see your changes get deployed to the live site?
+Pushing your changes doesn't trigger a deployment in Azure. You'll need to manually start a new deployment from the Azure Portal to sync your changes. Can you trigger that and see your changes get deployed to the live site?
