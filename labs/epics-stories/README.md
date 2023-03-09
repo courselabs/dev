@@ -1,4 +1,4 @@
-# User Stories and Epics
+# 1. User Stories and Epics
 
 _User Stories_ are the unit of work in Scrum (and other agile approaches). They're intended to be a concise description of a desired feature - something which anyone in the team can read and understand. They're usually written in a fixed format: _As a **persona**... I want to **goal**... So that **value**_. Sticking to the formula forces the team to think  in terms of the user and the value they're getting from the system. User Stories are small pieces of work, so they are often grouped together in _Epics_. The epic describes an overall goal or a common feature area.
 
