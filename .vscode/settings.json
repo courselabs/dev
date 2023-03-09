@@ -1,6 +1,6 @@
 {
-    "workbench.colorTheme": "Quiet Light",
-    "workbench.editorAssociations": {
-        "*.md": "vscode.markdown.preview.editor"
-    }
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.editorAssociations": {
+    "*.md": "vscode.markdown.preview.editor"
+  }
 }
