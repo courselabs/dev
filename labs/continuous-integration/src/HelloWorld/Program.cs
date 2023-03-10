@@ -1,6 +1,7 @@
 ﻿using Humanizer;
 
-namespace HelloWorld;
+namespace Heyy, it's Mubarak ! 
+;
 
 public class Program
 {
