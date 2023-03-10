@@ -1,7 +1,7 @@
 
 ```
     [Fact]
-    public void SimpleIntegers_Bug17()
+    public void Number17()
     {
         var service = new AdditionService();
         var expected = 19;
