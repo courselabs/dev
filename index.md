@@ -1,6 +1,6 @@
-Welcome to the Development labs.
+Welcome to the Software Development Fundamentals labs.
 
-These are hands-on resources to help you learn the basics of Software Development.
+These are hands-on resources to help you learn the tools and processes used in software development.
 
 ## Pre-reqs
 
@@ -32,15 +32,14 @@ These are hands-on resources to help you learn the basics of Software Developmen
 
 - [Continuous Integration](/labs/continuous-integration/README.md)
 
-- [pull requests]
+- [Pull Requests](/labs/pull-requests/README.md)
 
-- [continuous deployment]
-
+- [Continuous Deployment](/labs/continuous-deployment/README.md)
 
 ## Ensuring Quality
 
-- [automated testing]
+- [Automated testing](/labs/automated-testing/README.md)
 
-- [application environments]
+- [Application environments](/labs//application-environments/README.md)
 
-- [tracking defects]
+- [Tracking defects](/labs/tracking-defects/README.md)
