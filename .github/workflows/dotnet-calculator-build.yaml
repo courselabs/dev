@@ -1,16 +1,17 @@
-name: .NET Hello World build
+name: .NET Calculator build
 
 on:
+  workflow_dispatch:
   push:
     paths:
-       - "labs/continuous-integration/src/**"
+       - "labs/automated-testing/src/**"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: labs/continuous-integration/src/HelloWorld
+        working-directory: labs/automated-testing/src
     steps:
       - uses: actions/checkout@v3
 
@@ -19,11 +20,14 @@ jobs:
         with:
           dotnet-version: "6.0.x"
 
-      - name: Restore & build
+      - name: Restore
         run: |
           dotnet restore
+
+      - name: Build
+        run: |
           dotnet build
 
-      - name: Run
+      - name: Test
         run: |
-          dotnet run
+          dotnet test
