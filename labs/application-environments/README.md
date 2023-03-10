@@ -93,7 +93,7 @@ Browse to your staging slot deployment again (you can find the link on the _Over
 
 Once the deployment has finished, it should look like this:
 
-![](TODO)
+![](/img/application-environments/slot-staging.png)
 
 > Tricks like this are very common - different environments are effectively near-copies of the same app. You need to make sure you don't delete something in production because you think you're in the test environment, so different colors or large text banners help differentiate.
 
